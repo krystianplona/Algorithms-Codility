@@ -13,3 +13,15 @@ function solution(A) {
   
   return sorted[sorted.length-1] + 1
 }
+
+function solution2(A){
+    var expected = (A.length + 1) * (A.length + 2) / 2
+
+    for(elem in A){
+        expected -= elem
+    }
+    return expected
+}
+
+
+
